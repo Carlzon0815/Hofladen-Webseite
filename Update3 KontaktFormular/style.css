@@ -2,20 +2,20 @@
 
   html,body {margin: 0; padding: 0;}
 
-  a {text-decoration: none;}
+  a {text-decoration: none;font-family: 'Varela Round', sans-serif;}
 
   li {list-style-type: none;}
 
   h1,h2,h3,h4,h5 {
-    font-family: 'Sriracha', cursive;
+      font-family: 'Sriracha', cursive;
   }
 
   h1{
-    font-size: 50px
+      font-size: 50px
   }
 
   h2 {
-   font-size: 40px;
+     font-size: 40px;
   }
 
   h3 {
@@ -35,6 +35,34 @@
       border: 1px solid;
       border-radius: 5px;
   }
+
+  .hoverunderline {
+     font-weight: 500;
+     font-size: 20px;
+      text-decoration: none;
+     position: relative;
+      font-weight: 400;
+      color: black;
+   }
+
+ .hoverunderline:after{
+
+     content:'';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0%;
+     border-bottom: 2px solid #ffdc80;
+     transition: 0.6s;
+
+ }
+
+   .hoverunderline:hover:after {
+
+       content:'';
+       width: 100%;
+
+   }
 
 /*____|Header|______________________________*/
 
@@ -62,21 +90,23 @@
 
 
   #logo {
-    width: 80%px;
+    width: 180px;
     float: left;
-    margin: 0px 0 0 50px;
+    margin: 10px 0 0 50px;
   }
 
+  #logo:hover {
+    opacity: 0,5;
+  }
 
   #logo img {
       width: 100%;
       height: 60px;
   }
 
-
-   #nav {
+   #navigation {
     width: 100%;
-    height: 60px;
+    height: 80px;
     position: sticky;
     top: 0;
     left: 0;
@@ -86,24 +116,26 @@
   }
 
 
-  #nav ul li {
+  #navigation ul li {
     float: left;
-    margin-right: 45px;
+    margin-right: 25px;
   }
 
-  #nav ul li a {
-    font-size: 35px;
+  #navigation ul li a {
+    font-size: 25px;
     font-family: 'Sriracha', cursive;
+    font-weight: 400;
     color: whitesmoke;
-
+    text-transform: uppercase;
   }
 
 #main-nav {
     float: right;
-    margin: 5px 50px 0 0;
+    margin: 0px 50px 0 0;
+
   }
 
-#main-nav li a {
+#main-nav li {
 
     text-decoration: none;
     position: relative;
@@ -114,18 +146,19 @@
 
     content:'';
     position: absolute;
-    bottom: 13px;
+    bottom: 6px;
     left: 0;
     width: 0%;
-    border-bottom: 2.5px solid #ffdc80;
+    border-bottom: 2px solid #ffdc80;
     transition: 0.6s;
 
 }
 
-  #main-nav a:hover::after {
+  #main-nav a:hover:after {
 
       content:'';
       width: 100%;
+
   }
 
 
@@ -240,24 +273,49 @@
 
 
   #produktebox {
-      min-height: 500px;
+
       padding-top: 80px;
-      padding-bottom: 100px;
       text-align: center;
   }
 
-
-  #produkte li {
-
-      height: auto;
-      width: 500px;
-      margin: 10px auto;
-      text-align: left;
-      font-size: 20px;
-      font-family: 'Varela Round', sans-serif;
-      padding-left: 100px;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4px 4px;
+    grid-template-areas:
+      "produkt1 produkt2 produkt3"
+      "produkt4 produkt5 produkt6"
+      "produkt7 produkt8 produkt9"
+      "produkt10 produkt11 produkt12"
+      "produkt13 produkt14 produkt15";
   }
+  .produkt1 { grid-area: produkt1; }
+  .produkt2 { grid-area: produkt2; }
+  .produkt3 { grid-area: produkt3; }
+  .produkt4 { grid-area: produkt4; }
+  .produkt5 { grid-area: produkt5; }
+  .produkt6 { grid-area: produkt6; }
+  .produkt7 { grid-area: produkt7; }
+  .produkt8 { grid-area: produkt8; }
+  .produkt9 { grid-area: produkt9; }
+  .produkt10 { grid-area: produkt10; }
+  .produkt11 { grid-area: produkt11; }
+  .produkt12 { grid-area: produkt12; }
+  .produkt13 { grid-area: produkt13; }
+  .produkt14 { grid-area: produkt14; }
+  .produkt15 { grid-area: produkt15; }
 
+
+.grid-container img{
+  height: 150px;
+}
+
+.grid-container a {
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
 
 /*____|Kontakt|______________________________*/
 
@@ -328,37 +386,15 @@
       margin: 0 auto;
   }
 
-  #fusszeile a {
-    font-family: 'Sriracha', cursive;
-    font-weight: 500;
-    font-size: 25px;
-    color: whitesmoke;
-    text-transform: uppercase;
-     text-decoration: none;
-    position: relative;
-  }
-
-#fusszeile a:after{
-
-    content:'';
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    width: 0%;
-    border-bottom: 2px solid #ffdc80;
-    transition: 0.6s;
-
-}
-
-  #fusszeile a:hover:after {
-
-      content:'';
-      width: 100%;
-
-  }
 
   #fusszeile p {
       font-size: 15px;
+  }
+
+  #fusszeile a {
+    font-weight: 400;
+    color: whitesmoke;
+    text-decoration: none;
   }
 
 
@@ -388,32 +424,4 @@
 
   #impressum p{
       margin-top: 5px;
-  }
-
- #impressum a {
-    font-weight: 500;
-    font-size: 20px;
-     text-decoration: none;
-    position: relative;
-     font-weight: 400;
-     color: black;
-  }
-
-#impressum a:after{
-
-    content:'';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    border-bottom: 2px solid #ffdc80;
-    transition: 0.6s;
-
-}
-
-  #impressum a:hover:after {
-
-      content:'';
-      width: 100%;
-
   }
