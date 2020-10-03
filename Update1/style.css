@@ -1,0 +1,426 @@
+/*____|Allgemeines|______________________________*/
+
+  html,body {margin: 0; padding: 0;}
+
+  a {text-decoration: none;}
+
+  li {list-style-type: none;}
+
+  h1,h2,h3,h4,h5 {
+      font-family: 'Sriracha', cursive;
+  }
+
+  h1{
+      font-size: 50px
+  }
+
+  h2 {
+     font-size: 40px;
+  }
+
+  h3 {
+     font-size: 30px;
+  }
+
+  p {
+      font-size: 20px;
+      font-family: 'Varela Round', sans-serif;
+  }
+
+  hr {
+      width: 5%;
+      height: 4px;
+      color: #ffdc80;
+      background-color: #ffdc80;
+      border: 1px solid;
+      border-radius: 5px;
+  }
+
+/*____|Header|______________________________*/
+
+  #header{
+      background: white;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: url(Wabenmuster.svg);
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+      z-index: -1;
+     
+      
+  }
+
+  #header img{
+      width: 25%;
+          
+  }
+
+/*____|Navigation|______________________________*/
+
+  
+  #logo {
+    width: 180px;
+    float: left;
+    margin: 10px 0 0 50px;
+  }
+
+  #logo:hover {
+    opacity: 0,5;
+  }
+
+  #logo img {
+      width: 100%;
+      height: 60px;
+  }
+
+   #navigation {
+    width: 100%;
+    height: 80px;
+    position: sticky;  
+    top: 0;
+    left: 0;
+    background: grey;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+
+
+  #navigation ul li {
+    float: left;
+    margin-right: 25px;
+  }
+
+  #navigation ul li a {
+    font-size: 25px;
+    font-family: 'Sriracha', cursive;
+    font-weight: 400;
+    color: whitesmoke;
+    text-transform: uppercase;
+  }
+
+#main-nav {
+    float: right;
+    margin: 0px 50px 0 0;
+    
+  }
+
+#main-nav li {
+    
+    text-decoration: none;
+    position: relative;  
+    
+}
+
+#main-nav a:after{
+    
+    content:'';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ffdc80;
+    transition: 0.6s;
+    
+}
+
+  #main-nav a:hover:after { 
+      
+      content:'';
+      width: 100%;
+      
+  }
+
+
+/*____|Neues|______________________________*/
+
+  #neuesbox {
+      
+      margin-top: 100px;
+      margin-bottom: 100px;
+      
+  }
+
+  #neues{
+      
+      height: auto;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      border: 5px solid #ffdc80;
+      border-radius: 15px;
+      margin-top: 100px;
+      
+  }
+
+  #neues p{
+      
+      font-size: 20px;
+      
+  }
+
+#neues ul{
+    margin: 0 auto;
+    width: 200px;    
+}
+
+#neues li{
+    text-align: left;
+    list-style-type:disc;
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+  #neuertext{
+      
+      width: 65%;
+      margin: 0 auto;
+      
+  }
+
+  #neuertext a {
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    position: relative;    
+  }
+
+#neuertext a:after{
+    
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ffdc80;
+    transition: 0.6s;
+    
+}
+
+  #neuertext a:hover:after { 
+      
+      content:'';
+      width: 100%;
+      
+  }
+
+
+/*____|Wir|______________________________*/
+
+  #wirbox{
+      
+      width: 60%;
+      margin: 0 auto;
+      
+  }
+
+
+  #wir {
+      height: auto;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      
+      
+  }
+
+/*____|Karte|______________________________*/
+
+  #karte {
+     justify-content: center; 
+      align-items: center;
+      text-align: center;
+      padding-bottom: 50px;
+      padding-top: 50px;
+  }
+
+
+
+/*____|Produkte|______________________________*/
+
+
+
+  #produktebox {
+      min-height: 500px;
+      padding-top: 80px;
+      padding-bottom: 100px;
+      text-align: center;
+  }
+
+
+  #produkte li {
+      
+      height: auto;
+      width: 500px;
+      margin: 10px auto;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Varela Round', sans-serif;
+      padding-left: 100px;
+  }
+
+
+/*____|Kontakt|______________________________*/
+
+  #kontaktbox{
+
+      height: auto;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      padding-top: 50px;
+     /*_ background-image: url(Wabenmusterlight.svg);
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode:lighten;
+      border-bottom: 5px solid grey;
+      border-top: 5px solid grey; __*/
+  }
+
+
+  #kontaktinfos {
+      height: auto;
+      text-align:left;
+      width: 350px;
+      margin: 0 auto;
+  }
+
+  #kontaktinfos a {
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    position: relative;    
+  }
+
+#kontaktinfos a:after{
+    
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ffdc80;
+    transition: 0.6s;
+    
+}
+
+  #kontaktinfos a:hover:after { 
+      
+      content:'';
+      width: 100%;
+      
+  }
+
+
+
+/*____|Fußzeile|______________________________*/
+
+  #fusszeile {
+      background-color: grey;
+      color: whitesmoke;
+      padding-top: 30px;
+      padding-bottom: 13px;
+      text-align: center;
+      bottom: 0;
+      left: 10%;
+      right: 0;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  #fusszeile a {
+    font-family: 'Sriracha', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+     text-decoration: none;
+    position: relative;
+  }
+
+#fusszeile a:after{
+    
+    content:'';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ffdc80;
+    transition: 0.6s;
+    
+}
+
+  #fusszeile a:hover:after { 
+      
+      content:'';
+      width: 100%;
+      
+  }
+
+  #fusszeile p {
+      font-size: 15px;
+  }
+
+
+/*____|Impressum|______________________________*/
+
+
+  #impressum {
+      padding-top: 100px;
+      padding-left: 200px;
+      padding-bottom: 100px;
+      min-height: 77.5%;
+      width: 400px;
+  }
+
+  #impressum h1 {
+      text-transform: uppercase;
+      font-size: 40px;
+        color: #494949;
+  }
+
+  #impressum h3{
+      
+      margin-bottom: 5px;
+        color: #494949;
+      
+  }
+
+  #impressum p{
+      margin-top: 5px;
+  }
+
+ #impressum a {
+    font-weight: 500;
+    font-size: 20px;
+     text-decoration: none;
+    position: relative;
+     font-weight: 400;
+     color: black;
+  }
+
+#impressum a:after{
+    
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ffdc80;
+    transition: 0.6s;
+    
+}
+
+  #impressum a:hover:after { 
+      
+      content:'';
+      width: 100%;
+      
+  }
+
+

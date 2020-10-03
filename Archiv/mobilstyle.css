@@ -1,0 +1,24 @@
+/* Smaller screen / tablet+phone / 480px to 759px */
+@media (max-width: 759px) {
+    #header img {
+       width: 80%; 
+        
+    }
+    
+    #header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    #navigation {
+        
+        
+    }
+    
+    #impressum{      
+        min-height: 77.5%;
+    }
+    #fußzeile {
+        
+    } 
+}
