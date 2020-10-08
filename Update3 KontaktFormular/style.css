@@ -65,6 +65,8 @@
 
    }
 
+
+
 /*____|Header|______________________________*/
 
   #header{
@@ -285,6 +287,7 @@
 
   #karte {
     height: 70vh;
+    width: 100%;
      justify-content: center;
       align-items: center;
       text-align: center;
@@ -299,9 +302,8 @@
 
 
   #produktebox {
-
-      padding-top: 80px;
-      text-align: center;
+    padding-top: 80px;
+    text-align: center;
   }
 
   .grid-container {
@@ -341,6 +343,28 @@
   font-weight: 400;
   color: black;
   text-decoration: none;
+}
+
+.hoverborder{
+height: 90%;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+border: 5px solid white;
+border-radius: 5px;
+}
+
+.hoverborder:hover{
+border: 5px solid #ffdc80;
+border-radius: 5px;
+transition: 1s;
+}
+
+
+
+.produktkachel {
+
+  width: 80%;
+  margin: 0 auto;
+
 }
 
 /*____|Kontakt|______________________________*/
