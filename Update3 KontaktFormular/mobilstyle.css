@@ -1,5 +1,5 @@
 /* Smaller screen / tablet+phone / 480px to 759px */
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
     #header img {
        width: 80%;
 
@@ -10,5 +10,96 @@
         padding-bottom: 50px;
     }
 
+    #neues{
+      width: 80%;
+    }
+
+    #produkte{
+
+      width: 80%;
+
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(15, 1fr);
+      gap: 40px 5px;
+      grid-template-areas:
+        "produkt1"
+        "produkt2"
+        "produkt3"
+        "produkt4"
+        "produkt5"
+        "produkt6"
+        "produkt7"
+        "produkt8"
+        "produkt9"
+        "produkt10"
+        "produkt11"
+        "produkt12"
+        "produkt13"
+        "produkt14"
+        "produkt15";
+    }
+    .produkt1 { grid-area: produkt1; }
+    .produkt2 { grid-area: produkt2; }
+    .produkt3 { grid-area: produkt3; }
+    .produkt4 { grid-area: produkt4; }
+    .produkt5 { grid-area: produkt5; }
+    .produkt6 { grid-area: produkt6; }
+    .produkt7 { grid-area: produkt7; }
+    .produkt8 { grid-area: produkt8; }
+    .produkt9 { grid-area: produkt9; }
+    .produkt10 { grid-area: produkt10; }
+    .produkt11 { grid-area: produkt11; }
+    .produkt12 { grid-area: produkt12; }
+    .produkt13 { grid-area: produkt13; }
+    .produkt14 { grid-area: produkt14; }
+    .produkt15 { grid-area: produkt15; }
+
+    .grid-container img{
+      height: 25rem;
+    }
+
+    .produktbild{
+      height: 25rem;
+      width: 100%;
+    }
+
+    .grid-container a {
+      font-weight: 800;
+      color: black;
+      text-decoration: none;
+    }
+
+    .hoverborder{
+    height: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+    border-radius: 5px;
+    }
+
+    .hoverborder:hover{
+    border: 5px solid #ffdc80;
+    border-radius: 5px;
+    transition: 1s;
+    }
+
+
+
+    .produktkachel {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    #produktebox {
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    #fusszeile{
+      margin-top: 80px;
+    }
 
 }
