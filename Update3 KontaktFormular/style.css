@@ -80,10 +80,14 @@
       background-size: cover;
       background-blend-mode: multiply;
       z-index: -1;
-
-
   }
+@media (min-width: 1350px) {
 
+
+  #logomobil{
+    display: none;
+  }
+}
   #header img{
       width: 25%;
 

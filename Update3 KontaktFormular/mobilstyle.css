@@ -1,5 +1,9 @@
 /* Smaller screen / tablet+phone / 480px to 759px */
 @media (max-width: 1350px) {
+
+  #logodesktop{
+    display: none;
+  }
     #header img {
        width: 80%;
 
@@ -8,6 +12,14 @@
     #header {
         padding-top: 50px;
         padding-bottom: 50px;
+        background: white;
+        text-align: center;
+        background-image: url(Wabenmuster.svg);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        z-index: -1;
     }
 
     #neues{
