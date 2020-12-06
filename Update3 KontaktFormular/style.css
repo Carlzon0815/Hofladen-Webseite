@@ -1,12 +1,13 @@
+@media (min-width: 1350px) {
 /*____|Allgemeines|______________________________*/
 
   html,body {margin: 0; padding: 0;}
 
-  a {text-decoration: none; font-family: 'Varela Round', sans-serif;}
+  a {text-decoration: none;}
 
   li {list-style-type: none;}
 
-  h1,h2,h3,h4,h5 {
+  h1,h2,h3,h5 {
       font-family: 'Sriracha', cursive;
   }
 
@@ -20,6 +21,11 @@
 
   h3 {
      font-size: 30px;
+  }
+
+  h4{
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
   }
 
   p {
@@ -41,16 +47,13 @@
      font-size: 20px;
       text-decoration: none;
      position: relative;
-      font-weight: 400;
-      color: black;
-      font-family: 'Varela Round', sans-serif;
    }
 
  .hoverunderline:after{
 
      content:'';
      position: absolute;
-     bottom: 0;
+      bottom: 0px;
      left: 0;
      width: 0%;
      border-bottom: 2px solid #ffdc80;
@@ -81,13 +84,13 @@
       background-blend-mode: multiply;
       z-index: -1;
   }
-@media (min-width: 1350px) {
+
 
 
   #logomobil{
     display: none;
   }
-}
+
   #header img{
       width: 25%;
 
@@ -150,11 +153,10 @@
   }
 
   #navigation ul li a {
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Sriracha', cursive;
     font-weight: 400;
     color: whitesmoke;
-    text-transform: uppercase;
   }
 
 #main-nav {
@@ -174,7 +176,7 @@
 
     content:'';
     position: absolute;
-    bottom: 20px;
+    bottom: 22px;
     left: 0;
     width: 0%;
     border-bottom: 3px solid #ffdc80;
@@ -310,12 +312,17 @@
     position: relative;
     text-align: center;
     margin: 0 auto;
+    min-height: 60vh;
   }
 
   #produkte{
     width: 1270px;
     margin: 0 auto;
 
+  }
+
+  #produktebox a {
+    text-decoration: none;
   }
 
   .grid-container {
@@ -447,6 +454,7 @@ transition: 1s;
   }
 
 
+
   #fusszeile p {
       font-size: 15px;
   }
@@ -454,8 +462,32 @@ transition: 1s;
   #fusszeile a {
     color: whitesmoke;
     text-decoration: none;
+    font-weight: 400;
+    font-family: 'Sriracha', cursive;
+     font-weight: 500;
+     font-size: 20px;
+      text-decoration: none;
+     position: relative;
+   }
+
+  #fusszeile a:after{
+
+     content:'';
+     position: absolute;
+      bottom: 5px;
+     left: 0;
+     width: 0%;
+     border-bottom: 2px solid #ffdc80;
+     transition: 0.6s;
+
   }
 
+   #fusszeile a:hover:after {
+
+       content:'';
+       width: 100%;
+
+   }
 
 /*____|Impressum|______________________________*/
 
@@ -468,10 +500,15 @@ transition: 1s;
       width: 400px;
   }
 
+  #impressum a {
+    text-decoration: none;
+    color: #494949;
+  }
+
   #impressum h1 {
       text-transform: uppercase;
       font-size: 40px;
-        color: #494949;
+      color: #494949;
   }
 
   #impressum h3{
@@ -483,4 +520,6 @@ transition: 1s;
 
   #impressum p{
       margin-top: 5px;
+      text-decoration: none;
   }
+}
